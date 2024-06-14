@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,8 +13,8 @@ public class Item : MonoBehaviour
         {
             Destroy(collision.gameObject);
             cherries++;
-           Score.text = "Score: " + cherries;
+            Score.text = "Score: " + cherries;
 
         }
-    }
+    } 
 }

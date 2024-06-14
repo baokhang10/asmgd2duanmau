@@ -7,7 +7,7 @@ public class HealController : MonoBehaviour
     public Slider slider;
 
     // Scene name for the Game Over scene
-    public string gameOverSceneName = "GameOverScene";
+    public string gameOverMenu ="GameOverMenu";
 
     private void Start()
     {
@@ -32,7 +32,7 @@ public class HealController : MonoBehaviour
         if (slider.value <= 0)
         {
             // Load the Game Over scene
-            SceneManager.LoadScene(gameOverSceneName);
+            SceneManager.LoadScene(gameOverMenu);
         }
     }
 

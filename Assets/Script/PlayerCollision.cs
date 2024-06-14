@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
-    [SerializeField] float fallThreshold = -10f; // Giá trị y mà khi player rơi xuống dưới, sẽ chuyển đến GameOverScene
+    [SerializeField] float fallThreshold = -30f; // Giá trị y mà khi player rơi xuống dưới, sẽ chuyển đến GameOverScene
 
     void Update()
     {
@@ -58,6 +58,6 @@ public class PlayerCollision : MonoBehaviour
     void LoadGameOverScene()
     {
         // Load scene "GameOver"
-        SceneManager.LoadScene("GameOverScene");
+        SceneManager.LoadScene("GameOverMenu");
     }
 }
